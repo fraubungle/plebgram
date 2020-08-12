@@ -1,13 +1,14 @@
 import React from 'react'
 
+// Get local Styles
+import style from './style.module.css'
+
 const Header = () => {
     return (
-        <header>
-            <nav>
+        <header className={`center-vertically`}>
+            <nav className={`section-inner max-percentage`}>
                 <div>Logo Here</div>
             </nav>
-            <h1>Your Pictures</h1>
-            <p>A Description of the site and stuff with things!!</p>
         </header>
     )
 }

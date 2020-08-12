@@ -1,13 +1,249 @@
+@import url("https://use.typekit.net/tzd1euj.css");
+@import-normalize;
+
+:root {
+
+	--size-max-section-width: 98rem;
+
+	--colour-one: #B47EDE;
+	--colour-two: #EF6461;
+	--colour-three: #F7EBEC;
+	--colour-four: #1D1E2C;
+	
+	--font-thin: normal inherit 200 initial/initial azo-sans-web, sans-serif;
+	--font-light: normal inherit 300 initial/initial azo-sans-web, sans-serif;
+	--font-regular: normal inherit 400 initial/initial azo-sans-web, sans-serif;
+	--font-medium: normal inherit 500 initial/initial azo-sans-web, sans-serif;
+	--font-bold: normal inherit 700 initial/initial azo-sans-web, sans-serif;
+	--font-black: normal inherit 900 initial/initial azo-sans-web, sans-serif;
+}
+
+html {
+	font-size: 62.5%; /* 1rem = 10px */
+}
+
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+	box-sizing: border-box;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.6rem;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	-moz-box-sizing: inherit;
+	box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: var(--colour-four);
+	font: var(--font-medium);
+}
+
+h1 {
+	font-size: 3.3rem;
+	line-height: 5.5rem;
+	margin-bottom: 3rem;
+}
+
+h2 {
+	font-size: 2.6rem;
+	line-height: 4.5rem;
+	margin-top: 4.9rem;
+	margin-bottom: 1.9rem;
+}
+
+h3 {
+	font-size: 2rem;
+	line-height: 3.6rem;
+	margin-top: 3rem;
+	margin-bottom: 1.2rem;
+}
+
+h4 {
+	font-size: 1.6rem;
+	line-height: 3rem;
+	font-weight: bold;
+	margin-bottom: 7px;
+}
+
+p, ul, ol, blockquote, pre, .alert, .note, .box, .footnotes {
+	color: var(--colour-four);
+	font: var(--font-light);
+	line-height: 3rem;
+	margin-bottom: 3rem;
+}
+
+a {
+	color: var(--colour-two);
+	font: var(--font-bold);
+}
+
+ul, ol {
+	margin-left: 3rem;
+}
+
+li {
+	margin-bottom: 1.2rem;
+}
+
+blockquote {
+	padding-left: 1.9rem;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.15);
+	border-width: 0 0 0 .7rem;
+}
+
+sub, sup {
+	padding: 0 .1rem;
+}
+
+code, pre, kbd {
+	font-size: 15px;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+	background-color: rgba(0,0,0,0.08);
+	border-radius: .7rem;
+	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+	margin: 0 .1rem 0 .1rem;
+	padding: .3rem .4rem .3rem .4rem;
 }
+
+pre {
+	padding: 1.2rem;
+	border-style: solid;
+	border-color: rgba(0,0,0,0.15);
+	border-width: 0 0 0 .7rem;
+}
+
+kbd {
+	background-color: #fff;
+	padding: .3rem .4rem;
+	border-radius: .4rem;
+	box-shadow: 0 0 .4rem 0 rgba(0,0,0,0.45);
+	margin: 0 .1rem;
+}
+
+.alert, .note, .box {
+	padding: 1.9rem;
+}
+
+.footnotes {
+	font-size: 1.3rem;
+	line-height: 2.6rem;
+	padding-top: 1.9rem;
+	border-top: .1rem dotted rgba(0,0,0,0.15);
+}
+
+.footnotes p {
+	margin-bottom: 1.9rem;
+}
+
+ul ul, ul ol, ol ul, ol ol, 
+blockquote.right p, 
+blockquote.left p, 
+.alert :last-child, 
+.note :last-child, 
+.box :last-child, 
+.footnotes :last-child {
+	margin-bottom: 0;
+}
+
+.title {
+	font-size: 4.2rem;
+	line-height: 6.8rem;
+	margin-bottom: 3rem;
+}
+
+
+/* Layout ------------------------------------ */
+
+.section-inner {
+	margin: 0 auto;
+	max-width: var(--size-max-section-width);
+	width: calc( 100% - 5rem );
+	padding: 1.9rem;
+}
+
+.section-inner.max-percentage {
+	width: 100%;
+}
+
+.section-inner.thin { max-width: 58rem; }
+.section-inner.small { max-width: 80rem; }
+.section-inner.medium { max-width: 104rem; }
+
+.no-margin,
+.is-style-no-margin { margin: 0; }
+
+.no-padding,
+.is-style-no-padding { padding: 0; }
+
+.center-vertically {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+.no-scrollbars { scrollbar-width: none; }
+.no-scrollbars::-webkit-scrollbar { display: none; }
+
+
+/* Hiding and Showing ------------------------ */
+
+.d-none { display: none; }
+.d-flex { display: flex; }
+.d-block { display: block; }
+.d-inline { display: inline; }
+.d-inline-flex { display: inline-flex; }
+.d-inline-block { display: inline-block; }
+
+/* Alignment Classes ------------------------- */
+
+.set-flex-column { flex-direction: column; }
+.set-flex-row { flex-direction: row; }
+
+.remove-flex-row { flex-direction: column }
+.remove-flex-column { flex-direction: row; }
+
+.justify-baseline { justify-content: baseline; }
+.justify-start { justify-content: flex-start; }
+.justify-center { justify-content: center; }
+.justify-end { justify-content: flex-end; }
+.justify-space-between { justify-content: space-between; }
+.justify-space-around { justify-content: space-around; }
+
+.align-baseline { align-items: baseline }
+.align-start { align-items: flex-start; }
+.align-center { align-items: center; }
+.align-end { align-items: flex-end; }
+.align-space-between { align-content: space-between; }
+.align-space-around { align-content: space-around; }
+
+
+
+
+
+
+@media all and (min-width: 1040px) {
+	
+	.default-inner {
+		padding: 3rem;
+	}
+	
+}
+

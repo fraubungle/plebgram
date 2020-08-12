@@ -1,0 +1,20 @@
+
+/* modal styles */
+
+.backdrop{
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    position: fixed;
+        left: 0;
+        top: 0;
+    width: 100%;
+}
+
+.backdrop img{
+    box-shadow: 3px 5px 7px rgba(0,0,0,0.5);
+    border: 3px solid white;
+    display: block;
+    margin: 60px auto;
+    max-height: 80%;
+    max-width: 60%;
+}

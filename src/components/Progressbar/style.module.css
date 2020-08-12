@@ -1,0 +1,5 @@
+.progress-bar {
+    height: .5rem;
+    background-color: var(--colour-one);
+    margin-top: 2rem;
+}

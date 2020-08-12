@@ -1,0 +1,21 @@
+
+.wrapper {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    color: var(--colour-four);
+    font-family: azo-sans-web, sans-serif;
+    font-size: 6rem;
+    font-weight: 900;
+}
+.description {
+    color: var(--colour-four);
+    font-family: azo-sans-web, sans-serif;
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin: 3rem 0 0 0;
+}
