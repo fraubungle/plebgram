@@ -23,8 +23,7 @@ const UploadForm = () => {
             setFile(null);
             setError('We only accept image files (png, jpeg, jpg)')
         }
-        
-        console.log("Selected: ", selected)
+
     }
 
     return (

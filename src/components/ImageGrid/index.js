@@ -16,7 +16,8 @@ const ImageGrid = ({setSelectedImage}) => {
                 <motion.div className={style['item']} key={doc.id} whileHover={{opacity: 1}} layout onClick={() => setSelectedImage(doc.url)}>
                     <motion.img 
                         initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
+                        animate={{ opacity: 1}}
+                        whileHover={{scale: 2}}
                         transition={{ delay: 1 }}
                         className={style['image']} src={doc.url} alt="Add Alt Text Here" />
                 </motion.div>
